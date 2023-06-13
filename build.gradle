@@ -20,11 +20,11 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'com.fasterxml.jackson.module:jackson-module-kotlin'
 	implementation 'org.jetbrains.kotlin:kotlin-reflect'
-	implementation group: 'org.springframework.boot', name: 'spring-boot-autoconfigure', version: '3.0.0'
-	implementation 'io.micrometer:micrometer-tracing'
-	implementation 'io.micrometer:micrometer-tracing-bridge-otel'
+//	implementation group: 'org.springframework.boot', name: 'spring-boot-autoconfigure', version: '3.0.0'
+	implementation 'io.micrometer:micrometer-tracing:1.1.1'
+	implementation 'io.micrometer:micrometer-tracing-bridge-brave:1.1.1'
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
-	implementation 'io.opentelemetry:opentelemetry-exporter-zipkin'
+//	implementation 'io.opentelemetry:opentelemetry-exporter-zipkin'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
